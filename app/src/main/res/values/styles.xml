@@ -1,0 +1,33 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<resources>
+
+    <style name="AppTheme.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">?attr/colorSurface</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
+        <item name="postSplashScreenTheme">@style/AppTheme</item>
+    </style>
+
+    <style name="AppTheme.Splash.Black" parent="AppTheme.Splash">
+        <item name="postSplashScreenTheme">@style/AppTheme.Black</item>
+    </style>
+
+    <style name="AppTheme.AppWidgetContainerParent" parent="@android:style/Theme.DeviceDefault">
+        <item name="appWidgetRadius">24dp</item>
+        <item name="appWidgetPadding">16dp</item>
+        <item name="appWidgetInnerRadius">4dp</item>
+    </style>
+
+    <style name="AppTheme.AppWidgetContainer" parent="AppTheme.AppWidgetContainerParent" />
+
+    <style name="AppTheme.AppWidgetContainer.IconOnly" parent="AppTheme.AppWidgetContainerParent">
+        <item name="appWidgetPadding">8dp</item>
+        <item name="appWidgetRadius">8dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.AppWidget" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:padding">?attr/appWidgetPadding</item>
+    </style>
+
+</resources>
